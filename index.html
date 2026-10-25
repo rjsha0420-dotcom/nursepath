@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NURSEPATH - Student App & PNLE Board Reviewer</title>
+    <meta name="description" content="CHED-Compliant BSN Study Materials, 5-Subject PNLE Board Exam Reviewer, Practice Quizzes, and Clinical Hours Logbook." />
+    <meta property="og:title" content="NURSEPATH - Student App & PNLE Board Reviewer" />
+    <meta property="og:description" content="CHED-Compliant BSN Study Materials, 5-Subject PNLE Board Exam Reviewer, Practice Quizzes, and Clinical Hours Logbook." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/aistudio/WhatsApp_Image_2026-10-24_at_10.05.09_PM_6ca69e7c.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/jpeg" href="/assets/aistudio/WhatsApp_Image_2026-10-24_at_10.05.09_PM_6ca69e7c.jpeg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="NURSEPATH" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register Progressive Web App Service Worker for Offline Study Materials
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(reg) {
+              console.log('NURSEPATH ServiceWorker active with scope:', reg.scope);
+            })
+            .catch(function(err) {
+              console.warn('ServiceWorker registration error:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

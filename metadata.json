@@ -1,0 +1,8 @@
+{
+  "name": "Remix NURSEPATH - Global Nursing Scholarship \u0026 Practice Platform-ADMIN",
+  "description": "CHED-Compliant (CMO 15 s.2017 \u0026 CMO 5 s.2024), PQF Levels 6-8, International Licensure, Specialty \u0026 Graduate MSN/Doctorate Programs. Study Local. Pass Global. Practice Anywhere.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
